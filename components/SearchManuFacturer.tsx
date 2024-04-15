@@ -3,11 +3,8 @@ import { Fragment, useState } from "react";
 import { Combobox, Transition } from "@headlessui/react";
 import { manufacturers } from "@/Constant";
 
-export interface SearchManuFacturerProps {
-    manufacturer: string;
-    setManuFacturer: (manufacturer: string) => void;
-  }
 
+ import { SearchManuFacturerProps } from "@/types";
 
 const SearchManufacturer = ({ manufacturer, setManuFacturer }: SearchManuFacturerProps) => {
   const [query, setQuery] = useState("");
@@ -100,3 +97,4 @@ const SearchManufacturer = ({ manufacturer, setManuFacturer }: SearchManuFacture
 };
 
 export default SearchManufacturer;
+

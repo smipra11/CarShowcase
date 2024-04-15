@@ -1,7 +1,7 @@
-"use client"
-import React,{useState} from 'react'
-import { SearchManuFacturer } from '.'
+"use client";
+import { useState } from 'react'
 
+import SearchManuFacturer from './SearchManuFacturer'
 const SearchBar = () => {
     const[manufacture,setManufactures] = useState("")
     const handleSearch = () =>{
